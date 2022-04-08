@@ -5,6 +5,9 @@ interface LoaderData {
 }
 export const loader = (): LoaderData => {
   return {
+    // This should be an array of all files inside of the directory `~/app/routes/blog`
+    // Ideally, we could also import data from those files
+    // What's the preferred way to get this list of blog posts?
     blogPosts: ["blog-post-one", "blog-post-two", "blog-post-three"],
   };
 };
